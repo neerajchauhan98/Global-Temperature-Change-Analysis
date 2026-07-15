@@ -1,10 +1,27 @@
-🌍 Global Temperature Change Forecasting (1961–2050)
+# 🌍 Global Temperature Change Analytics & Forecasting using Machine Learning (1961–2050)
 
-A climate data analytics and forecasting project using Linear Regression to study and predict global temperature anomalies. This work analyzes historical climate change patterns across 284 countries/regions (1961–2019), identifies hotspot areas, and forecasts future warming up to 2050.
+This project combines **Data Processing**, **Data Analytics**, and **Machine Learning** to analyze and forecast global temperature anomalies using historical climate data. It processes over **150K+ climate records** collected across **284 countries/regions (1961–2019)** through data cleaning, transformation, exploratory analysis, and regression-based forecasting to predict future warming trends up to **2050**.
 
 🎯 Objective
 
-To analyze global warming patterns using real-world climate records, identify the most affected regions and months, and forecast future temperature anomalies to support data-driven climate decisions and policy insights.
+To process, clean, transform, and analyze large-scale historical climate datasets, identify long-term warming patterns, and build a regression-based forecasting model that supports data-driven climate analysis and policy insights.
+
+
+## 📊 Project Workflow
+
+Historical Climate Dataset
+        ↓
+Data Cleaning
+        ↓
+Data Transformation
+        ↓
+Exploratory Data Analysis
+        ↓
+Visualization
+        ↓
+Regression Model
+        ↓
+Temperature Forecast (2050)
 
 📂 Dataset Summary
 Attribute	Details
@@ -65,10 +82,11 @@ Saved as .png using plt.savefig().
 
 🛠 Tech Stack & Skills
 Domain	Tools
-Programming	Python
-Libraries	Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn
-ML & Statistics	Linear Regression, Evaluation Metrics
-Techniques	Feature Engineering, Data Cleaning, Forecasting, Visualization
+Programming -	Python
+Libraries - 	Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn
+ML & Statistics - 	Linear Regression, Evaluation Metrics
+Techniques - Data Cleaning, Data Processing, Data Transformation, Feature Engineering, Forecasting, Visualization
+
 ▶ Run This Project
 📌 Install Dependencies
 pip install -r requirements.txt
