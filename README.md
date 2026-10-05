@@ -1,14 +1,14 @@
 # Global Temperature Change Analytics & Forecasting using Machine Learning (1961–2050)
 
-This project combines **Data Processing**, **Data Analytics**, and **Machine Learning** to analyze and forecast global temperature anomalies using historical climate data. It processes over **150K+ climate records** collected across **284 countries/regions (1961–2019)** through data cleaning, transformation, exploratory analysis, and regression-based forecasting to predict future warming trends up to **2050**.
+This project combines data processing, data analytics, and machine learning to analyze and forecast global temperature anomalies using historical climate data. It processes over 150K+ climate records across 284 countries and regions from 1961 to 2019 through data cleaning, transformation, exploratory analysis, and regression-based forecasting to estimate future warming trends up to 2050.
 
-Objective
+## Objective
 
-To process, clean, transform, and analyze large-scale historical climate datasets, identify long-term warming patterns, and build a regression-based forecasting model that supports data-driven climate analysis and policy insights.
+To process, clean, transform, and analyze historical climate datasets, identify long-term warming patterns, and build a regression-based forecasting model for data-driven climate analysis.
 
+## Project Workflow
 
-##  Project Workflow
-
+```text
 Historical Climate Dataset
         ↓
 Data Cleaning
@@ -23,79 +23,92 @@ Regression Model
         ↓
 Temperature Forecast (2050)
 
- Dataset Summary
-Attribute	Details
- Source	FAOSTAT – Global Climate Change Dataset
- Geographic Coverage	284 Countries/Regions
- Time Span	1961–2019 (59 years)
- Variable	Annual & Monthly Temperature Change (°C)
- Cleaning	Null handling + Melt transformation + Filtering for Temperature Change
- Format	Local file dataset/py_dataset.csv
- Key Insights & Findings
- 1. Global Warming Trend
+## Dataset Summary
 
-Sharp anomaly rise after early 2000s, indicating accelerated warming.
+| Attribute | Details |
+|---|---|
+| Source | FAOSTAT – Global Climate Change Dataset |
+| Geographic Coverage | 284 Countries/Regions |
+| Time Span | 1961–2019 (59 years) |
+| Variable | Annual & Monthly Temperature Change (°C) |
+| Data Cleaning | Null handling, melt transformation, and filtering for temperature change |
+| Dataset File | `dataset/py_dataset.csv` |
 
-Average global anomaly now exceeds 1.1°C.
+## Key Insights and Findings
 
- 2. Top Temperature Hotspots
+### 1. Global Warming Trend
 
-Based on average anomaly values, Central Asia & Eastern European regions are warming almost twice as fast as the global rate, with average anomalies exceeding +2°C.
+- A sharp rise in temperature anomalies was observed after the early 2000s.
+- Average global temperature anomaly exceeds 1.1°C in recent years.
 
- These regions are major climate risk hotspots due to landlocked geography & dry climate sensitivity.
+### 2. Top Temperature Hotspots
 
- 3. Seasonal Observations
+- Central Asian and Eastern European regions show average temperature anomalies exceeding +2°C.
+- These regions show significantly higher warming compared with the global average.
 
-July shows the highest anomaly among all months (peak temperature deviation).
+### 3. Seasonal Observations
 
-Winter months display highly fluctuating anomaly values, indicating unstable seasonal shifts.
+- July shows the highest temperature anomaly among the analyzed months.
+- Winter months show greater fluctuations in anomaly values.
 
- Model Evaluation (Linear Regression)
-Metric	Score
- R² Score	0.8806
- Mean Squared Error (MSE)	0.0265
- Mean Absolute Error (MAE)	0.1292
+## Model Evaluation
 
- A strong R² value shows temperature rise has a consistent linear pattern over time.
+The project uses Linear Regression for temperature forecasting.
 
-Forecasted Temperature Change (2023–2050)
-Year	Predicted Δ Temp (°C)
-2023	1.33
-2030	1.51
-2040	1.77
-2050	2.03
+| Metric | Score |
+|---|---:|
+| R² Score | 0.8806 |
+| Mean Squared Error (MSE) | 0.0265 |
+| Mean Absolute Error (MAE) | 0.1292 |
 
-Insight: Global anomaly is expected to increase by ≈ +0.70°C between 2023 and 2050, exceeding multiple international climate threshold targets.
+The model achieved an R² score of 0.8806, indicating a strong relationship between the time variable and the observed temperature anomaly trend.
 
-Visual Results
+## Forecasted Temperature Change (2023–2050)
 
-All plots are automatically saved in: output/
+| Year | Predicted Temperature Change (°C) |
+|---:|---:|
+| 2023 | 1.33 |
+| 2030 | 1.51 |
+| 2040 | 1.77 |
+| 2050 | 2.03 |
 
- Global Warming Trend
- India vs China Comparison
- Top Region Warming Bar Chart
- Box Plot & Monthly Bar Pattern
- Heatmaps (Yearly & Country-wise)
- 2050 Forecast Visualization
+The model projects an increase of approximately +0.70°C in global temperature anomaly between 2023 and 2050.
 
-Tech Stack & Skills
-Domain	Tools
-Programming -	Python
-Libraries - 	Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn
-ML & Statistics - 	Linear Regression, Evaluation Metrics
-Techniques - Data Cleaning, Data Processing, Data Transformation, Feature Engineering, Forecasting, Visualization
+## Visual Results
 
-Run This Project
+The project generates and saves visualizations in the `output/` directory.
 
+- Global Warming Trend
+- India vs China Comparison
+- Top Region Warming Bar Chart
+- Box Plot and Monthly Temperature Pattern
+- Yearly and Country-wise Heatmaps
+- 2050 Temperature Forecast
+
+## Tech Stack and Skills
+
+| Category | Tools |
+|---|---|
+| Programming | Python |
+| Libraries | Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn |
+| Machine Learning | Linear Regression |
+| Evaluation | R², MSE, MAE |
+| Techniques | Data Cleaning, Data Processing, Data Transformation, Feature Engineering, Forecasting, Visualization |
+
+How to Run
 Install Dependencies
 pip install -r requirements.txt
 
-Execute the Script
+Execute the Project
 python main.py
 
-Author
 
- Neeraj Chauhan
- Data Science & Machine Learning Enthusiast
+**Author
+Neeraj Chauhan**
+B.Tech – Computer Science Engineering
+GitHub: https://github.com/neerajchauhan98
+LinkedIn: https://www.linkedin.com/in/neeraj-chauhan-5bb899298/
 
- Star ⭐ the repository if you like this work and want to support open-source learning.
+---
+
+If you found this project useful, consider giving the repository a ⭐.
